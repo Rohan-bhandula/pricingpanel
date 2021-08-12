@@ -1,0 +1,99 @@
+html{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(1, 139, 139);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+ol, ul {
+	list-style: none;
+    margin: 0;
+	padding: 0;
+	border: 0;
+}
+.panel {
+    box-sizing: content-box;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pricing-plan{
+    border-bottom: 2px solid rgb(156, 149, 146);
+}
+.pricing-img{
+    margin: 20px;
+    max-width: 100%;
+}
+.pricing-header{
+    color: rgb(99, 99, 99);
+    letter-spacing: 1px;
+}
+.pricing-features{
+    margin: 25px;
+    font-weight: 600;
+    color: rgba(0, 139, 139, 0.767);
+}
+.pricing-features-item{
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 10px;
+    border-top: 2px solid rgba(156, 149, 146, 0.74);
+}
+.pricing-price{
+    font-weight: 900;
+    font-size: xx-large;
+    color: darkcyan;
+    display: block;
+}
+.pricing-button{
+    background-color: darkcyan;
+    font-size: 20px;
+    padding: 5px;
+    text-decoration-line: none;
+    color: white;
+    border: 5px solid rgba(0, 139, 139, 0.493);
+    display: inline-block;
+    border-radius: 5px;
+    margin: 10px;
+}
+.pricing-button:hover{
+    background-color: white;
+    font-size: 20px;
+    padding: 5px;
+    text-decoration-line: none;
+    color: darkcyan;
+    border: 5px solid rgba(0, 139, 139, 0.493);
+    display: inline-block;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+@media(min-width:800px) {
+    .panel{
+        flex-direction: row;
+    }
+    .pricing-plan{
+        border-bottom: none;
+        border-right: 2px solid rgba(156, 149, 146, 0.658);
+        padding: 30px;
+    }
+    .pricing-plan:last-child{
+        border-bottom: none;
+        border-right: none
+    }
+    
+}
